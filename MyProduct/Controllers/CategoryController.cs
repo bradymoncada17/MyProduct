@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyProduct.Data;
+using MyProduct.Models;
 
 namespace MyProduct.Controllers
 {
@@ -35,10 +36,12 @@ namespace MyProduct.Controllers
         // POST: CategoryController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Category category)
         {
             try
             {
+                _categoryData.CreateCategory(category);
+                TempData["SuccessMessage"] = $"Category '{category.Name}' created successfully!";
                 return RedirectToAction(nameof(Index));
             }
             catch
