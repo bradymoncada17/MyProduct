@@ -51,25 +51,40 @@ Aplicación web full-stack para gestión de productos y categorías, construida 
 ## 📸 Capturas de pantalla
 
 ### 🏠 Inicio
-![Home](screenshots/home.png)
+<img width="1913" height="944" alt="image" src="https://github.com/user-attachments/assets/ebec0a13-ef78-4c0a-9e2b-1ea9d59eb47e" />
+
 
 ### 📦 Lista de Productos
-![Products](screenshots/products.png)
+<img width="921" height="452" alt="image" src="https://github.com/user-attachments/assets/dc8a4333-3351-424a-8b8d-2fde3093966b" />
+
 
 ### ➕ Crear Producto — con dropdown de categorías en tiempo real
-![Create Product](screenshots/create_product.png)
+<img width="921" height="454" alt="image" src="https://github.com/user-attachments/assets/b85cce54-c85f-46f0-a0fe-48be87562906" />
 
-### 🏷️ Lista de Categorías
-![Categories](screenshots/categories.png)
 
-### ➕ Crear Categoría — con notificación de éxito
-![Create Category Success](screenshots/category_success.png)
+### ✏️ Editar Producto
+<img width="1917" height="572" alt="image" src="https://github.com/user-attachments/assets/9387280b-85e3-45f9-b75e-a9e8e5b5e1a2" />
 
-### ✏️ Editar Categoría
-![Edit Category](screenshots/edit_category.png)
 
 ### 🗑️ Confirmación de eliminación
-![Delete Category](screenshots/delete_category.png)
+<img width="1915" height="398" alt="image" src="https://github.com/user-attachments/assets/f2259c09-78cd-4d19-a1be-3c4454ee1210" />
+
+
+### 🏷️ Lista de Categorías
+<img width="921" height="285" alt="image" src="https://github.com/user-attachments/assets/3c7fbe19-047c-4b63-8749-ef8a7861e699" />
+
+
+### ➕ Crear Categoría — con notificación de éxito
+<img width="921" height="104" alt="image" src="https://github.com/user-attachments/assets/84e38d96-8e42-48cd-a66e-460f373736ea" />
+
+
+### ✏️ Editar Categoría
+<img width="921" height="256" alt="image" src="https://github.com/user-attachments/assets/9d75d000-3925-4d65-8773-2160197c4227" />
+
+
+### 🗑️ Confirmación de eliminación
+<img width="921" height="186" alt="image" src="https://github.com/user-attachments/assets/8a5abf87-9523-475c-9587-dd5e7b3b9bc2" />
+
 
 ---
 
