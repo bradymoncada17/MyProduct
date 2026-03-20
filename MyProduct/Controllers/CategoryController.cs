@@ -74,9 +74,10 @@ namespace MyProduct.Controllers
         // GET: CategoryController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var category = _categoryData.GetCategoryById(id); // ✅ busca la categoría
+            if (category == null) return NotFound();
+            return View(category); // ✅ pasa el modelo a la vista
         }
-
         // POST: CategoryController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -84,6 +85,7 @@ namespace MyProduct.Controllers
         {
             try
             {
+                _categoryData.DeleteCategory(id); // ✅ esta línea faltaba
                 return RedirectToAction(nameof(Index));
             }
             catch

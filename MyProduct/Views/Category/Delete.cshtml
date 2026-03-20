@@ -1,18 +1,17 @@
 ﻿@model MyProduct.Models.Category
 
-@{
-    ViewData["Title"] = "Delete Category";
-}
-
 <h1>Delete Category</h1>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>@Model.Name</h4>
-    <form asp-action="DeleteConfirmed">
+    <form asp-action="Delete" method="post">
         <input type="hidden" asp-for="CategoryId" />
         <input type="submit" value="Delete" class="btn btn-danger" />
         <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
->
+Dos cambios:
+
+asp-action="DeleteConfirmed" → asp-action="Delete"
+Agregado method="post" al form — sin esto el form hace GET y nunca llega al método POST del controlador
