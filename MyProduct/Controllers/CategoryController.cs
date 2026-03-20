@@ -1,14 +1,23 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyProduct.Data;
 
 namespace MyProduct.Controllers
 {
     public class CategoryController : Controller
     {
-        // GET: CategoryController
-        public ActionResult Index()
+        private readonly CategoryData _categoryData;
+
+        public CategoryController(CategoryData categoryData)
         {
-            return View();
+            _categoryData = categoryData;
+        }
+
+        // GET: CategoryController
+        public IActionResult Index()
+        {
+            var categories = _categoryData.GetCategories();
+            return View(categories);
         }
 
         // GET: CategoryController/Details/5
